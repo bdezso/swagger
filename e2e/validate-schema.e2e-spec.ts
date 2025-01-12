@@ -76,7 +76,7 @@ describe('Validate OpenAPI schema', () => {
               CreateCatDto: {
                 enumWithDescription: {
                   enum: await import(
-                    './src/cats/dto/pagination-query.dto'
+                    './src/cats/dto/pagination-query.dto.js'
                   ).then((f) => f.LettersEnum)
                 },
                 name: {
